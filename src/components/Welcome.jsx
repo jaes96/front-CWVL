@@ -15,7 +15,7 @@ const Welcome = () => {
   useEffect(() => {
     if (id) {
       axios
-        .get(`http://localhost:4000/user/${id}`)
+        .get(`https://examen-back.onrender.com/user/${id}`)
         .then(({ data }) => {
           if (data.nombre) {
             setName(data.nombre);

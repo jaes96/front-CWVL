@@ -31,7 +31,7 @@ const Register = () => {
       };
       setLoading(true);
       await axios
-        .post("http://localhost:4000/register", Usuario)
+        .post("https://examen-back.onrender.com/register", Usuario)
         .then((res) => {
           const { data } = res;
           setMensaje(data.mensaje);

@@ -19,7 +19,7 @@ const AgregarTares = () => {
   useEffect(() => {
     if (id) {
       axios
-        .get(`http://localhost:4000/user/${id}`)
+        .get(`https://examen-back.onrender.com/user/${id}`)
         .then(({ data }) => {
           if (data.nombre) {
           } else {
@@ -42,7 +42,7 @@ const AgregarTares = () => {
       };
       setLoading(true);
       await axios
-        .post("http://localhost:4000/agregar", Tarea)
+        .post("https://examen-back.onrender.com/agregar", Tarea)
         .then((res) => {
           const { data } = res;
           setMensaje(data.mensaje);

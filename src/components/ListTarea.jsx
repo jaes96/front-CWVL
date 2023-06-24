@@ -10,7 +10,7 @@ const ListTarea = ({ id }) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/tarea`)
+      .get(`https://examen-back.onrender.com/tarea`)
       .then(({ data }) => {
         setDataTarea(data);
       })
@@ -19,7 +19,7 @@ const ListTarea = ({ id }) => {
 
   function borrarTarea(idTarea) {
     axios
-      .post("http://localhost:4000/eliminarTarea", { idTarea })
+      .post("https://examen-back.onrender.com/eliminarTarea", { idTarea })
       .then((res) => {
         const { data } = res;
         alert(data.mensaje);

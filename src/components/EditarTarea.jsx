@@ -19,7 +19,7 @@ const EditarTarea = () => {
   useEffect(() => {
     if (id) {
       axios
-        .get(`http://localhost:4000/user/${id}`)
+        .get(`https://examen-back.onrender.com/user/${id}`)
         .then(({ data }) => {
           if (data.nombre) {
           } else {
@@ -33,7 +33,7 @@ const EditarTarea = () => {
   useEffect(() => {
     if (idTarea) {
       axios
-        .get(`http://localhost:4000/getTareaEdit/${idTarea}`)
+        .get(`https://examen-back.onrender.com/getTareaEdit/${idTarea}`)
         .then(({ data }) => {
           console.log(data);
           setInputs({
@@ -60,7 +60,7 @@ const EditarTarea = () => {
       };
       setLoading(true);
       await axios
-        .post("http://localhost:4000/actualizar", Tarea)
+        .post("https://examen-back.onrender.com/actualizar", Tarea)
         .then((res) => {
           const { data } = res;
           setMensaje(data.mensaje);
