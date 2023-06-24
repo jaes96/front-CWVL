@@ -13,10 +13,7 @@ const Menu = ({ id, name }) => {
     <div className={styles.navbar}>
       <div className={styles.nav_logo}>{name}</div>
       <div className={`${styles.nav_items} ${isOpen && styles.open}`}>
-        <a href="" onClick={() => navega()}>
-          {" "}
-          Agregar Tarea
-        </a>
+        <button onClick={() => navega()}> Agregar Tarea</button>
 
         <a href="../login"> Salir</a>
       </div>
