@@ -8,6 +8,9 @@ const Menu = ({ id, name }) => {
   const navega = () => {
     navigate(`../agregarTarea/${id}`);
   };
+  const salir = () => {
+    navigate(`../login`);
+  };
 
   return (
     <div className={styles.navbar}>
@@ -15,10 +18,7 @@ const Menu = ({ id, name }) => {
       <div className={`${styles.nav_items} ${isOpen && styles.open}`}>
         <button onClick={() => navega()}> Agregar Tarea</button>
 
-        <a href="https://fastidious-rabanadas-5bf7a5.netlify.app/login">
-          {" "}
-          Salir
-        </a>
+        <button onClick={() => salir()}> Salir</button>
       </div>
       <div
         className={`${styles.nav_toggle} ${isOpen && styles.open}`}
