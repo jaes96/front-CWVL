@@ -15,7 +15,10 @@ const Menu = ({ id, name }) => {
       <div className={`${styles.nav_items} ${isOpen && styles.open}`}>
         <button onClick={() => navega()}> Agregar Tarea</button>
 
-        <a href="../login"> Salir</a>
+        <a href="https://fastidious-rabanadas-5bf7a5.netlify.app/login">
+          {" "}
+          Salir
+        </a>
       </div>
       <div
         className={`${styles.nav_toggle} ${isOpen && styles.open}`}
