@@ -38,7 +38,7 @@ const Register = () => {
           setInputs({ nombre: "", contraseña: "", correo: "" });
           setTimeout(() => {
             setMensaje("");
-            navigate("https://examen-back.onrender.com/login");
+            navigate("https://fastidious-rabanadas-5bf7a5.netlify.app/login");
           }, 1500);
         })
         .catch((error) => {
@@ -144,7 +144,11 @@ const Register = () => {
           <p>
             Ya tienes una cuenta?{" "}
             <b
-              onClick={() => navigate("https://examen-back.onrender.com/login")}
+              onClick={() =>
+                navigate(
+                  "https://fastidious-rabanadas-5bf7a5.netlify.app/login"
+                )
+              }
             >
               Inicia Sesión
             </b>
