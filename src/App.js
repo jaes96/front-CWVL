@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Welcome from "./components/Welcome";
-import Login from "./components/login";
+import Login from "./components/Login";
 import Register from "./components/Register";
 import AgregarTarea from "./components/AgregarTares";
 import EditarTarea from "./components/EditarTarea";
