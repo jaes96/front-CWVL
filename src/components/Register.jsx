@@ -38,7 +38,7 @@ const Register = () => {
           setInputs({ nombre: "", contraseña: "", correo: "" });
           setTimeout(() => {
             setMensaje("");
-            navigate("https://fastidious-rabanadas-5bf7a5.netlify.app/login");
+            navigate("/login");
           }, 1500);
         })
         .catch((error) => {
@@ -143,15 +143,7 @@ const Register = () => {
           </button>
           <p>
             Ya tienes una cuenta?{" "}
-            <b
-              onClick={() =>
-                navigate(
-                  "https://fastidious-rabanadas-5bf7a5.netlify.app/login"
-                )
-              }
-            >
-              Inicia Sesión
-            </b>
+            <b onClick={() => navigate("/login")}>Inicia Sesión</b>
           </p>
         </form>
       </div>
