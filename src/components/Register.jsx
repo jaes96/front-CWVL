@@ -38,7 +38,7 @@ const Register = () => {
           setInputs({ nombre: "", contraseña: "", correo: "" });
           setTimeout(() => {
             setMensaje("");
-            navigate("/login");
+            navigate("https://examen-back.onrender.com/login");
           }, 1500);
         })
         .catch((error) => {
