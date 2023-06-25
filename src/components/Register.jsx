@@ -143,7 +143,11 @@ const Register = () => {
           </button>
           <p>
             Ya tienes una cuenta?{" "}
-            <b onClick={() => navigate("/login")}>Inicia Sesión</b>
+            <b
+              onClick={() => navigate("https://examen-back.onrender.com/login")}
+            >
+              Inicia Sesión
+            </b>
           </p>
         </form>
       </div>
